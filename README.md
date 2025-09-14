@@ -49,3 +49,28 @@ recon0/
 2. nuclei will automatically update templates on first run
 
 3. If any tools fail to install, re-run bootstrap.sh or check your Go setup
+
+4. FOR WINDOWS/WSL USERS:
+
+If you're using WSL (Windows Subsystem for Linux) or cloning the repo from Windows:
+You may see "/usr/bin/env: ‘bash\r’: No such file or directory"
+
+To fix this:
+
+Set Git to use Unix line endings by running:
+git config --global core.autocrlf input
+sudo apt update
+sudo apt install dos2unix
+dos2unix bootstrap.sh
+dos2unix *.sh
+
+
+### OPTIONAL:
+if you want to  confirm a file has Unix-style endings, run:
+file bootstrap.sh
+### EXPECTED OUTPUT:
+bootstrap.sh: ASCII text
+### even If you see:
+bootstrap.sh: ASCII text, with CRLF line terminators
+### then it still has Windows line endings.
+
