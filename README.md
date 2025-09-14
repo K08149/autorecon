@@ -18,7 +18,7 @@ a tool to automate recon of bug bounty which includes major tools.
 - Python 3
 - Bash shell
 ###  INSTALLATION:
-1. git clone https://github.com/yourname/autorecon.git
+1. git clone "https://github.com/K08149/autorecon.git"
 2. cd autorecon
 3. chmod +x bootstrap.sh
 4. ./bootstrap.sh
