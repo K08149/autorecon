@@ -67,10 +67,10 @@ dos2unix *.sh
 
 ### OPTIONAL:
 if you want to  confirm a file has Unix-style endings, run:
-file bootstrap.sh
+"file bootstrap.sh"
 ### EXPECTED OUTPUT:
-bootstrap.sh: ASCII text
+"bootstrap.sh: ASCII text"
 ### even If you see:
-bootstrap.sh: ASCII text, with CRLF line terminators
+"bootstrap.sh: ASCII text, with CRLF line terminators"
 ### then it still has Windows line endings.
 
